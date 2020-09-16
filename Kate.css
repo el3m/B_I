@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+body{
+    margin: 0;
+    font-family: Arial; 
+    background-color:floralwhite;
+}
+section{
+    position:static;
+}
+
+.div{
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+}
+
+footer{
+    width: 100%;
+    margin: 0;
+}
+
+.menu{
+    background-color:cornsilk;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    transition: 1s;
+    text-align:center;
+    align-content: center;
+}
+
+.sec1 div{
+    width: calc(100%-3vh);
+    padding-top: 0;
+}
+.sec1 h1{
+    padding-top: 0;
+    font-size: 5rem;
+    font-family: 'Rock Salt', cursive;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+/*
+.menu:hover{
+    height: 120px;
+    transition: 1s;
+}
+*/
+.menu_item{
+    display: inline-block;
+}
+
+.menu_href{
+    margin: 30px;
+    padding: 5px;
+    color:black;
+    text-decoration: none;
+
+}
+
+@keyframes sec{
+    from{
+        background-image:url(Kate/image0.2.jpeg);
+        background-size: cover;
+    }
+    25%{
+        background-image:url(Kate/image1.1.jpeg);                   
+        background-size: cover;
+        
+    }
+    50%{
+        background-image:url(Kate/image10.1.jpeg);
+        background-size: cover;
+
+    }
+    75%{
+        background-image:url(Kate/image2.1.jpeg);
+        background-size: cover;
+
+    }
+    to{
+        background-image:url(Kate/image0.2.jpeg);
+        background-size: cover;
+
+    }
+}
+
+/*@keyframes secfull{
+    from{
+        background-image;
+        background-size: cover;
+    }
+    25%{
+        background-image:url(Kate/desert1024.jpg);                   
+        background-size: cover;
+        
+    }
+    50%{
+        background-image:url(super/Spain.jpg);
+        background-size: cover;
+
+    }
+    75%{
+        background-image:url(super/Spain.jpg);
+        background-size: cover;
+
+    }
+    to{
+        background-image:url(super/Spain.jpg);
+        background-size: cover;
+
+    }
+}*/
+
+.sec1{
+    animation: sec 20s infinite;
+    padding-top: 50px;
+    height: 100vh;
+    background-image: url(Kate/MainSea.jpg);
+}
+
+.sec3{
+    background-color: #EFCDB8;
+}
+
+.sec4{ 
+    background-size: cover;
+    background-color: #ADD8E6;
+}
+
+.Info{
+    display:flex;
+    flex-direction: column;
+    width: calc(100%-2vh);
+    justify-content: space-around;
+}
+
+
+h2{
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+}
+h3,h4,h5{
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+article{
+    text-align: justify;
+    text-align: center;
+    padding: 1vh;
+    padding-bottom: 4vh;
+}
+
+.img{
+    justify-content:space-around;
+    display: flex;
+}
+
+img{
+    transition 1.5s;
+}
+
+img:hover{
+    border-radius: 50%;
+    transition: 1.5s;
+}
+
+@media(max-width: 768px){
+    .menu{
+    text-align:center;
+}
+    @keyframes sec7{
+    from{
+        background-image:url(Kate/image0.2.1.jpeg);
+        background-size: cover;
+    }
+    25%{
+        background-image:url(Kate/image1.1.1.jpeg);                   
+        background-size: cover;
+        
+    }
+    50%{
+        background-image:url(Kate/image10.1.1.jpeg);
+        background-size: cover;
+
+    }
+    75%{
+        background-image:url(Kate/image2.1.1.jpeg);
+        background-size: cover;
+
+    }
+    to{
+        background-image:url(Kate/image0.2.1.jpeg);
+        background-size: cover;
+
+    }
+}
+    
+    .sec1{
+        animation: sec7 20s infinite;
+    }
+
+}
+
+@media (min-width: 768px) {
+    
+
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+   font-size: 2.2rem; 
+}
+h5{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.8rem;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+    .Aq{
+    width: 33%;
+}
+    .Info{
+    flex-direction: row;
+    align-items: stretch;
+    
+    width: calc(100%-2vh);
+}
+        
+    .Info1{
+    flex-direction:column;
+    align-items: stretch;
+    
+    width: calc(100%-2vh);
+}
+    .arr{
+    }
+    .Aw{
+        width: 100%;
+    }
+    
+    .sec1{
+    animation: secfull 20s infinite;
+    height: 100vh;
+}
+.menu h1{
+    font-size: 1.9rem;
+}    
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h4{
+   font-size: 1.6rem; 
+}
+h5{
+    font-size: 1.4rem;
+}
+    
+    p{
+    font-size: 1.2rem;
+}
+
+}
+
+@media (min-width: 1366px) {
+
+}
+
+
+a{
+ font-size: 1.3rem;   
+}
+
+.Me{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.BK{
+    background-image: url(Kate/SeaSand.jpg);
+    color:white;
+    font-size: 
+}
+.PersCourse{
+    text-align: left;
+    background-size: cover;
+}
+.online{
+    text-align: inherit;
+}
+.YT{
+    border-radius: 50%;
+}
+.format{
+    width: 100%;
+}
+.Course{
+    height: 40%;
+}
+
+/* Hola a todos - шрифт
+    меню- сдержанно
+    разделы(main)-подразделы(Caveat Brush)-основная информация(arial)
+    color: blue, white, бежевый, почти черный
+фон- волны, выцветить
+
+*/
